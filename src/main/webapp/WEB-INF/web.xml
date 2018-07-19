@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>CRUDsimples2</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UsuarioController</display-name>
+    <servlet-name>UsuarioController</servlet-name>
+    <servlet-class>br.com.akira.controller.UsuarioController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UsuarioController</servlet-name>
+    <url-pattern>/UsuarioController</url-pattern>
+    <url-pattern>/usuController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UsuarioControllerLogin</display-name>
+    <servlet-name>UsuarioControllerLogin</servlet-name>
+    <servlet-class>br.com.akira.controller.UsuarioControllerLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UsuarioControllerLogin</servlet-name>
+    <url-pattern>/UsuarioControllerLogin</url-pattern>
+    <url-pattern>/usuControllerLogin</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>UsuarioFilter</display-name>
+    <filter-name>UsuarioFilter</filter-name>
+    <filter-class>br.com.akira.filter.UsuarioFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>UsuarioFilter</filter-name>
+    <url-pattern>/UsuarioFilter</url-pattern>
+  </filter-mapping>
+</web-app>
